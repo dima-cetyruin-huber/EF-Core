@@ -15,7 +15,6 @@ namespace BankProject.Data
         {
             // Настройка подключения (например, SQLite для простоты)
             optionsBuilder.UseSqlite("Data Source=bank.db")
-                          .LogTo(Console.WriteLine, LogLevel.Information) // Вывод SQL в консоль
                           .EnableSensitiveDataLogging();
         }
 
